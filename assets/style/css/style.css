@@ -1,16 +1,13 @@
+.h4{
+  text-align: center;
+}
 
 .flex-container {
   display: flex;
   justify-content: space-evenly;
+  padding-bottom: 1em;
 }
 
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-input[type=number] {
-  -moz-appearance: textfield;
+.flex-button {
+  text-align: center;
 }

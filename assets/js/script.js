@@ -14,16 +14,16 @@ function styleDog(destiny) {
 
 //// FUNCTION DESAFIO 2
 
-function resultClick (place) {
-  const h5mod = document.querySelector(place)
-  const input1 = document.querySelector('#input1').value;
-  const input2 = document.querySelector('#input2').value;
-  const input3 = document.querySelector('#input3').value;
+function resultClick () {
+
+  const input1 = Number(document.querySelector('#input1').value);
+  const input2 = Number(document.querySelector('#input2').value);
+  const input3 = Number(document.querySelector('#input3').value);
   const modText = document.querySelector('#modText')
-  const sumImputs = Number(input1 + input2 + input3); 
-  
-  if ( sumImputs <=10 ) { 
-    modText.innerHTML = 'llevas' + sumImputs + ' stickers.'
+  const sumInputs = input1 + input2 + input3;
+
+  if ( sumInputs <=10 ) { 
+    modText.innerHTML = `Llevas ${sumInputs} stickers`;
   } else {
     modText.innerHTML= 'llevas demasiados stickers'
   }
@@ -32,16 +32,17 @@ function resultClick (place) {
 
 ////// FUNCTION DESAFIO 3
 
-const selecValue1 = document.querySelector('"select1').value;
-const selecValue2 = document.querySelector('#select2').value;
-const selecValue3 = document.querySelector('#select3').value;
-
-finalValue = selecValue1 + selecValue2 + selecValue3;
 
 function finalValue () {
-  if (finalValue === '911') {
+
+  const selectValue1 = (document.querySelector('#select1').value);
+  const selectValue2 = (document.querySelector('#select2').value);
+  const selectValue3 = (document.querySelector('#select3').value);
+  const sumValue = selectValue1 + selectValue2 + selectValue3;
+  
+  if (sumValue === '911') {
     alert('password correcto')
-  } else if (finalValue === '714') {
+  } else if (sumValue === '714') {
     alert('password2 correcto')
   } else {
     alert('password incorrecto')
